@@ -29,4 +29,13 @@ api TiendaOnline {
             fecha  : Date
         }
     }
+
+    resource Factura {
+        operations: listar, obtener, crear
+        fields {
+            nota: Number
+            comentario: Text
+            cliente: Text
+        }
+    }
 }
